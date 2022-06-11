@@ -1,0 +1,346 @@
+/* reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* common */
+.text-white{
+    color:#fff;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.mt-15{
+    margin-top: 15px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.color-red{
+    color: #ff0036;
+}
+
+.col-half{
+    width: 45%;
+}
+
+.col-third{
+    width: calc(100% /3);
+}
+/* main */
+#main{
+    
+}
+
+/* animation */
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 179px;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #C850C0 46%, #FFCC70 100%);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 67%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 35%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 62%;
+    width: 45px;
+    height: 45px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 60%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+/* my logo  */
+#info{
+
+}
+
+#logo-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-info{
+
+}
+
+.img-logo{
+    width: 154px;
+}
+
+.logo-text{
+    color:#ff0036;
+}
+
+.logo-text:hover{
+    color: #ff6787;
+}
+
+.text-info{
+    font-size: 14px;
+    opacity: 0.6;
+    font-style: italic;
+    padding: 10px 0;
+}
+
+/* header */
+
+#header {
+    background-color: #f7f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-box{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    width: 400px;
+    height: 100%;
+    padding: 30px;
+}
+
+/* slider-taskbar */
+.slider-taskbar{
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.in-love{
+    width: 50px;
+    border:#ccc 2px solid;
+    border-radius: 50%;
+}
+/* Food List */
+
+.section-header{
+    font-size: 20px;
+    color: #ff0036;
+}
+
+.section-header .text-description{
+    font-weight: 700;
+}
+
+.search-input{
+    border: none;
+    background-color: #f7f6ff;
+    padding: 12px;
+    width: 100%;
+    border-radius: 22px;
+    outline: none;
+    opacity: 0.8;
+}
+
+.section-content{
+
+}
+
+/* list menu */
+.list-menu{
+    padding: 8px;
+    float: left;
+    background-color: #f7f6ff;
+    border-radius: 30px;
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    margin: 15px 6px;
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+.fast-food{
+    width: 50px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.list-menu:hover{
+    border: 1px solid #ff0036;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px red;
+    color: #ff0036;   
+}
+
+.img-hamburger{
+    /* border: 1px solid #ff0036;
+    font-weight: 600;
+    box-shadow: 2px 2px 3px red; */
+}
+
+.section-footer{
+    
+}
+
+/* */
+
+.list-items{
+    float: left;
+    background-color: #ff6787;
+    border-radius: 30px;
+    margin: 15px 8px;
+}
+
+.list-items:hover{
+    background-color: #f7f6ff;
+    box-shadow: 1px 2px 6px red;
+    
+}
+
+.list-items:hover .text-about{
+    color: #ff0036;
+}
+
+.img-fastfood{
+    width: 100px;
+    height: 80px;
+    border-radius: 12px;
+    margin:15px 0;
+}
+
+.text-about{
+    color: #f7f6ff;
+}
+
+.buy-items{
+    margin: 15px 0;
+}
+
+/* footer */
+.img-contact{
+    float: right;
+    width: 50px;
+    z-index: 5;
+}
+
+.ti-more{
+    margin-left: 12%;
+    font-size: 30px;
+    color: #ff0036;
+}
+
+/*  */
